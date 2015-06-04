@@ -62,7 +62,7 @@ class rcmail_ttrss extends rcube_plugin
 		
 		$plain_pass = $rcmail->decrypt($_SESSION['password']);
 		
-        $src  = $this->urlbase . $rcmail->config->get('ttrss_location') . 'index.php' . '?user=' . $_SESSION['username'] . '&pass=' . $plain_pass];
+        $src  = $this->urlbase . $rcmail->config->get('ttrss_location') . 'index.php' . '?user=' . $_SESSION['username'] . '&pass=' . $plain_pass;
         return '<iframe id="rcmail_ttrssframe" width="100%" height="100%" frameborder="0"'
             .' src="' . $src. '"></iframe>';
     }
