@@ -15,7 +15,7 @@
 class rcmail_ttrss extends rcube_plugin
 {
     // all task excluding 'login' and 'logout'
-    public $task = '?(?!login|logout).*';
+    public $task = '?(?!login).*';
     // we've got no ajax handlers
     public $noajax = true;
     // skip frames
@@ -32,6 +32,7 @@ class rcmail_ttrss extends rcube_plugin
         // register actions
         $this->register_action('index', array($this, 'action'));
         $this->register_action('redirect', array($this, 'redirect'));
+		$this->add_hook('session_destroy', array($this, 'logout'));
 		
         // add taskbar button
         $this->add_button(array(
@@ -60,4 +61,14 @@ class rcmail_ttrss extends rcube_plugin
         return '<iframe id="rcmail_ttrssframe" width="100%" height="100%" frameborder="0"'
             .' src="' . $src. '"></iframe>';
     }
+	function logout()
+    {
+        $rcmail = rcube::get_instance();
+        $this->load_config();
+		
+        // send logout request to ttrss
+        $logout_url = $this->urlbase . $rcmail->config->get('ttrss_location') . '/backend.php?op=logout';
+        $rcmail->output->add_script("new Image().src = '$logout_url';", 'foot');
+    }
+	
 }
