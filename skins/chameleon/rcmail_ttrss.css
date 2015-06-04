@@ -5,10 +5,10 @@
   background: url(rcmail_ttrss.png) 0px 5px no-repeat;
 }
 
-#ktaskpopup a.button-rcmail_ttrss:hover span.button-inner,                                                                                                                      
-#ktaskpopup a.button-rcmail_ttrss.button-selected span.button-inner
+#ktaskpopup a.button-rcmail_ttrss:hover span.button-inner,
+#ktaskpopup a.button-rcmail_ttrss.button-selected:hover span.button-inner
 {
-  background: url(rcmail_ttrss.png) 0px -16px no-repeat;
+  background: url(rcmail_ttrss.png) 1px -18px no-repeat;
 }
 
 #mainscreen
