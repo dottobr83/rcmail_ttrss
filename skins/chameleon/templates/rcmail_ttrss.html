@@ -9,16 +9,12 @@
 
 <roundcube:include file="/includes/header.html" />
 
-<div id="mainscreen" class="offset">
-
 <roundcube:if condition="env:task == 'settings'" />
 	<roundcube:include file="/includes/settingstabs.html" />
 <roundcube:endif />
 
-<div id="pluginbody" class="uibox" style="overflow: hidden">
-<roundcube:object name="ttrssframe" />
-</div>
-
+<div id="mainscreen" class="uibox" style="overflow: hidden">
+<roundcube:object name="rcmail_ttrssframe" />
 </div>
 
 <roundcube:object name="plugin.footer" />

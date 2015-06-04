@@ -10,3 +10,10 @@
 {
   background: url(rcmail_ttrss.png) 0px -16px no-repeat;
 }
+
+#mainscreen
+{
+left: 0px;
+right: 0px;
+bottom: 0px;
+}
