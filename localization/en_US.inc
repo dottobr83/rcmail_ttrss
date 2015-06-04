@@ -1,6 +1,6 @@
 <?php
 
 $labels = array();
-$labels['ttrss'] = 'TTRSS';
+$labels['rcmail_ttrss'] = 'TTRSS';
 
 ?>

@@ -1,0 +1,12 @@
+/***** rcmail_ttrss plugin styles *****/
+
+#ktaskpopup a.button-rcmail_ttrss span.button-inner, #taskmenu span.activetask.rcmail_ttrss
+{
+  background: url(rcmail_ttrss.png) 0px 5px no-repeat;
+}
+
+#ktaskpopup a.button-rcmail_ttrss:hover span.button-inner,                                                                                                                      
+#ktaskpopup a.button-rcmail_ttrss.button-selected span.button-inner
+{
+  background: url(rcmail_ttrss.png) 0px -16px no-repeat;
+}
