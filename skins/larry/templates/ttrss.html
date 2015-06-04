@@ -1,0 +1,20 @@
+<roundcube:object name="doctype" value="html5" />
+<html>
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:include file="/includes/links.html" />
+<link rel="stylesheet" type="text/css" href="/this/ttrss.css" />
+<link rel="stylesheet" type="text/css" href="/settings.css" />
+</head>
+<body class="ttrss noscroll">
+
+<roundcube:include file="/includes/header.html" />
+
+<div id="mainscreen" class="uibox" style="overflow: hidden">
+    <roundcube:object name="ttrssframe" />
+</div>
+
+<roundcube:include file="/includes/footer.html" />
+
+</body>
+</html>
