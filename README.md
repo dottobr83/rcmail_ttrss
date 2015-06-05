@@ -1,7 +1,11 @@
 # rcmail_ttrss
 Roundcubemail TTRSS plugin __(Partially working but experimental).__
 
-The aim is to make a plugin to run TT-RSS inside roundcubemail (Either vannilla or Kolab) and automatically authenticate on the current user account
+The aim is to make a plugin to run TT-RSS inside roundcubemail (Either vannilla or Kolab) and *automatically authenticate on the current user account (partially complete)*
+
+#Warning
+
+The iframe currently passes password in __plaintext__ while not a huge issue when used in the described install below it is a security risk and is planned to be addressed soon.
 
 ## Requierments
   1. [Roundcubemail](https://github.com/roundcube/roundcubemail) or [Kolab](kolab.org)
