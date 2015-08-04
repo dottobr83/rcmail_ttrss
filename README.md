@@ -12,21 +12,21 @@ The iframe currently passes password in __plaintext__ while not a huge issue whe
 
 ## Requierments
   1. [Roundcubemail](https://github.com/roundcube/roundcubemail) or [Kolab](kolab.org)
-  2. [Tiny Tiny RSS](https://github.com/gothfox/Tiny-Tiny-RSS)
-  3. The modified auth_imap plugin for TT-RSS [auth_rcmail](https://github.com/dugite-code/auth_rcmail)
+  2. [Tiny Tiny RSS](https://tt-rss.org/gitlab/fox/tt-rss/wikis/home)
+  3. The modified auth_imap plugin for TT-RSS [auth_rcmail](https://gitlab.com/dugite-code/auth_rcmail)
   4. PHP-IMAP *(php5-imap for php5-fpm users)*
 
 ## Installation
 
 *__Note:__* *example from kolab 3.4 on debian wheezy*
 
-  1. Clone the [Tiny-Tiny-RSS repository](https://github.com/gothfox/Tiny-Tiny-RSS)
+  1. Clone the [Tiny-Tiny-RSS repository](https://tt-rss.org/gitlab/fox/tt-rss)
     1. `cd /var/www/`
-    2. `git clone https://github.com/gothfox/Tiny-Tiny-RSS.git`
+    2. `git clone https://tt-rss.org/gitlab/fox/tt-rss.git`
 
   2. Clone the rcmail_ttrss repository into your roundcube installation plugin directory
     1. `cd /usr/share/roundcubemail/plugins`
-    2. `git clone https://github.com/dugite-code/rcmail_ttrss.git`
+    2. `git clone https://gitlab.com/dugite-code/rcmail_ttrss.git`
 
   3. Simlink or copy TT-RSS directory into rcmail_ttrss directory
     1. `cd /usr/share/roundcubemail/plugins/rcmail_ttrss`
@@ -63,9 +63,9 @@ The iframe currently passes password in __plaintext__ while not a huge issue whe
       1. Proceed to Actions -> Prefernces -> users
       2. select the admin account and *__change your password__*
     
-  5. Clone the [auth_rcmail repository](https://github.com/dugite-code/auth_rcmail) into your Tiny-Tiny-RSS plugin directory
+  5. Clone the [auth_rcmail repository](https://gitlab.com/dugite-code/auth_rcmail) into your Tiny-Tiny-RSS plugin directory
     1. `cd /var/www/Tiny-Tiny-RSS/plugins`
-    2. `git clone https://github.com/dugite-code/auth_rcmail`
+    2. `git clone https://gitlab.com/dugite-code/auth_rcmail.git`
     3. `cd /var/www/Tiny-Tiny-RSS`
     4. `nano /var/www/Tiny-Tiny-RSS/config.php`
     5. Append the following code to the bottom of the config file:
